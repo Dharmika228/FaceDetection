@@ -6,7 +6,7 @@ from os import listdir
 from os.path import isfile, join
 
 # Get the training data we previously made
-data_path = './faces/user1/'
+data_path = './faces/user1/'  #give file path where you want to load the data samples
 onlyfiles = [f for f in listdir(data_path) if isfile(join(data_path, f))]
 # Create arrays for training data and label
 Training_Data, Labels = [], []
